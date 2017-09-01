@@ -37,6 +37,6 @@ pdf("CopraRNA2_benchmark.pdf")
     # CopraRNA 2 evo
     lines(c2_evo_rank_cumulated, col="cornflowerblue", lwd=2, lty=2)
 
-    legend(120, 40, c("CopraRNA 1", "CopraRNA 2 ooi", "CopraRNA 2 evo", "IntaRNA"), col=c("coral","cornflowerblue","cornflowerblue","gray48"), lty=c(1,1,2,1), lwd=2)
+    legend(120, 40, c("CopraRNA 2 ooi", "CopraRNA 2 evo", "CopraRNA 1", "IntaRNA"), col=c("cornflowerblue","cornflowerblue","coral","gray48"), lty=c(1,2,1,1), lwd=2)
 dev.off()
 
