@@ -33,4 +33,3 @@ sed -i 's/RyhB;b1612;fumA;;;/RyhB;b1612;fumA;88;74;135/g' benchmark.csv
 # plot ROC-like
 R --slave -f plot_performance.R
 
-
