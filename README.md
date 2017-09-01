@@ -1,2 +1,2 @@
 # CopraRNA_benchmark
-Benchmark for CopraRNA 1, 2 and IntaRNA
+Benchmark for CopraRNA 1 vs. 2 
