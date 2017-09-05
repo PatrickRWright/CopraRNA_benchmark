@@ -1,0 +1,8 @@
+P-value threshold:0.99
+ntup:200
+ntdown:100
+Hybridization seed:7
+NTs in interaction region:20
+Filter size:400
+sRNA conservation and accessibilty:yes
+sRNA window size:13
