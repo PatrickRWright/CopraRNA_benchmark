@@ -1,0 +1,8 @@
+1. only kept pairs for sRNAs which are part of our benchmark
+2. sorted by maximum normalized odds ratio of the three tested conditions
+3. removed 
+   AS
+   other-ncRNA
+   sRNA
+   tRNA
+
