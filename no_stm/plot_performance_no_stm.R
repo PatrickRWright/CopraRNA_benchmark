@@ -86,6 +86,26 @@ pdf("CopraRNA2_benchmark_no_stm.pdf")
     # TargetRNA 2
     lines(targetrna_cumulated, col="#6a3d9a", lwd=2)
 
-    legend(105, 30, c("CopraRNA 1", "IntaRNA", "CopraRNA 2 ooi", "CopraRNA2 ooi cons", "CopraRNA2 ooi ooicons", "CopraRNA2 balanced", "CopraRNA2 balanced cons", "CopraRNA 2 evo", "interactome", "TargetRNA 2"), col=c("#a6cee3","black","#b2df8a","#33a02c","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#cab2d6","#6a3d9a"), lwd=2, bty="n")
+    legend(105, 30, c("CopraRNA 1", "IntaRNA", "CopraRNA 2 ooi", "CopraRNA 2 ooi cons", "CopraRNA 2 ooi ooicons", "CopraRNA 2 balanced", "CopraRNA 2 balanced cons", "CopraRNA 2 evo", "Interactome", "TargetRNA 2"), col=c("#a6cee3","black","#b2df8a","#33a02c","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#cab2d6","#6a3d9a"), lwd=2, bty="n")
 dev.off()
+
+pdf("CopraRNA2_benchmark_no_stm_trunc.pdf")
+    # CopraRNA 1
+    plot(c1_cumulated, type="l", main="", ylab="# True Positives", xlab="# Target predictions per sRNA", ylim=c(0,70), lwd=2, col="#a6cee3")
+    # IntaRNA
+    lines(intarna_cumulated, col="black", lwd=2)
+    # CopraRNA 2 ooi
+    lines(c2_ooi_cumulated, col="#b2df8a", lwd=2)
+    # CopraRNA2 ooi ooicons
+    lines(c2_ooi_ooicons_cumulated, col="#fb9a99", lwd=2)
+    # interactome
+    lines(interactome_cumulated, col="#cab2d6", lwd=2)
+    # TargetRNA 2
+    lines(targetrna_cumulated, col="#6a3d9a", lwd=2)
+
+    legend(80, 23, c("CopraRNA 1", "IntaRNA", "CopraRNA 2 ooi", "CopraRNA 2 ooi ooicons", "Interactome (Melamed et al., 2016)", "TargetRNA 2"), col=c("#a6cee3","black","#b2df8a","#fb9a99","#cab2d6","#6a3d9a"), lwd=2, bty="n")
+dev.off()
+
+
+
 
