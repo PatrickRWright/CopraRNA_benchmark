@@ -61,7 +61,7 @@ foreach (@confirmed_hybrids) {
             # intarna
             if ($target_ltag =~ m/STM/) {
             } else { # eco
-               $intarna_rank = `grep -Poni '$target_ltag' $_/NC_000913_upfromstartpos_200_down_100_opt.intarna.csv | head -n1 |  awk -F':' '{ print \$1 }'`; 
+               $intarna_rank = `grep -Poni '$target_ltag' $_/NC_000913_upfromstartpos_200_down_100_opt.intarna.sorted.csv | head -n1 |  awk -F':' '{ print \$1 }'`; 
             }
 
             # remove 1 because of header line
@@ -75,9 +75,9 @@ foreach (@confirmed_hybrids) {
             $intarna_rank-- if($intarna_rank);
 
             # interactome
-            my $interactome_rank = `grep -Poni '$target_name' $_/*sorted.csv | head -n1 | awk -F':' '{ print \$1 }'`;
-            chomp $interactome_rank;  
-
+            my $interactome_rank = `grep -Poni '$target_name' $_/*sorted.csv | head -n1 | awk -F':' '{ print \$2 }'`;
+            chomp $interactome_rank;
+  
             # print bench line
             print "$srna_name;$target_ltag;$target_name;$c1_rank;$ooi_c2;$ooi_cons_c2;$ooi_ooicons_c2;$bal_c2;$bal_cons_c2;$evo_c2;$intarna_rank;$interactome_rank\n";
 

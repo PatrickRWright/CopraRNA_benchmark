@@ -86,6 +86,6 @@ pdf("CopraRNA2_benchmark_no_stm.pdf")
     # TargetRNA 2
     lines(targetrna_cumulated, col="#6a3d9a", lwd=2)
 
-    legend(100, 35, c("CopraRNA 1", "IntaRNA", "CopraRNA 2 ooi", "CopraRNA2 ooi cons", "CopraRNA2 ooi ooicons", "CopraRNA2 balanced", "CopraRNA2 balanced cons", "CopraRNA 2 evo", "interactome", "TargetRNA 2"), col=c("#a6cee3","black","#b2df8a","#33a02c","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#cab2d6","#6a3d9a"), lwd=2)
+    legend(105, 30, c("CopraRNA 1", "IntaRNA", "CopraRNA 2 ooi", "CopraRNA2 ooi cons", "CopraRNA2 ooi ooicons", "CopraRNA2 balanced", "CopraRNA2 balanced cons", "CopraRNA 2 evo", "interactome", "TargetRNA 2"), col=c("#a6cee3","black","#b2df8a","#33a02c","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#cab2d6","#6a3d9a"), lwd=2, bty="n")
 dev.off()
 
